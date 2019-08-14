@@ -119,11 +119,12 @@ body {
     font-size: 1rem;
     color: var(--fifth-color);
     letter-spacing: 1px;
+    font-weight: 300;
     margin-bottom: 3rem;
 }
 
 .story-text-wrapper {
-    padding: 0.5rem 3rem;
+    padding: 3rem;
     color: var(--fifth-color);
     background: var(--fourth-color);
     text-align: left;
@@ -135,7 +136,60 @@ body {
 
 /* gallery */
 .gallery-wrapper {
+    padding: 4rem 0;
     background: var(--base-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-background {
+    width: 90%;
+    background: var(--third-color);
+}
+
+.third-header-gallery {
+    color: var(--second-color);
+}
+
+.fourth-header-gallery {
+    color: var(--fourth-color);
+}
+
+.gallery-photos {
+    width: 100%;
+    background: var(--base-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    background: url("../img/background-photo.jpg") no-repeat center/cover;
+    cursor: pointer;
+    transition: width 0.6s, height 0.6s, opacity 0.6s;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-big {
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid var(--second-color);
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* media queries*/
@@ -143,3 +197,12 @@ body {
     .story-paragraph {
         font-size: 1rem;
     }
+
+    .gallery-photos {
+        flex-direction: row;
+    }
+
+    .photo {
+        width: 50%;
+    }
+}
