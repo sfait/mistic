@@ -126,10 +126,10 @@ body {
 }
 
 .story-text-wrapper {
-    padding: 3rem;
+    padding: 3rem 1rem;
     color: var(--fifth-color);
     background: var(--fourth-color);
-    text-align: left;
+    text-align: center;
 }
 
 .story-paragraph {
@@ -161,11 +161,11 @@ body {
 }
 
 .gallery-photos {
-    width: 100%;
+    /* width: 100%; */
     background: var(--base-color);
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -174,9 +174,8 @@ body {
 .photo {
     width: 100%;
     height: 300px;
-    background: url("../img/background-photo.jpg") no-repeat center/cover;
     cursor: pointer;
-    transition: width 0.6s, height 0.6s, opacity 0.6s;
+    transition: width 0.6s, height 0.6s;
 }
 
 .photo img {
@@ -234,7 +233,7 @@ body {
 
 /* about-us */
 .about-us {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .about-us-header {
@@ -247,8 +246,9 @@ body {
 }
 
 .about-us-box {
+    font-size: 0.8rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -271,18 +271,19 @@ body {
 }
 
 .about-us-text {
-    width: 50%;
-    padding: 0 3rem;
-    text-align: left;
+    width: 100%;
+    padding: 1rem 3rem 2rem;
+    text-align: center;
 }
 
 .about-us-box-second {
     background: var(--base-color);
     color: var(--second-color);
+    flex-direction: column-reverse;
 }
 
 .about-us-box-second .about-us-text {
-    text-align: right;
+    text-align: center;
 }
 
 .about-us-box-second span {
@@ -290,7 +291,7 @@ body {
 }
 
 .about-us img {
-    width: 50%;
+    width: 100%;
 }
 
 .fifth-header {
@@ -298,10 +299,53 @@ body {
     font-size: 1.5rem;
 }
 
+/* social icons section */
+.social-icons-section {
+    margin-bottom: 3rem;
+}
+
+.social-icons-section-wrapper {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons-section-wrapper a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--second-color);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social-icons-section-wrapper a:hover {
+    opacity: 1;
+}
+
+/* footer */
+.footer-wrapper {
+    padding: 0 0 2rem;
+    font-size: 0.8rem;
+    color: var(--second-color);
+    text-align: center;
+    opacity: 0.7;
+}
+
+.footer-wrapper a {
+    color: var(--second-color);
+    opacity: 0.7;
+    transition: opacity 0.6s;
+}
+
+.footer-wrapper a:hover {
+    opacity: 1;
+}
 
 /* media queries*/
-@media only screen and (min-width: 700px) {}
+@media only screen and (min-width: 750px) {
     .story-paragraph {
+        padding: 0rem 3rem;
         font-size: 1rem;
     }
 
@@ -310,6 +354,28 @@ body {
     }
 
     .photo {
+        width: 50%;
+    }
+
+    .about-us-box {
+        font-size: 1rem;
+        flex-direction: row;
+    }
+
+    .about-us-text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .about-us-box-second {
+        flex-direction: row;
+    }
+
+    .about-us-box-second .about-us-text {
+        text-align: right;
+    }
+
+    .about-us img {
         width: 50%;
     }
 }
