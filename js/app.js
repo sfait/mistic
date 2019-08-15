@@ -12,14 +12,14 @@ function showPhoto() {
 function showAnimations() {
 
     const slideLeft = {
-        distance: "100%",
+        distance: "150%",
         origin: "left",
         delay: 300,
         opacity: null
     };
 
     const slideRight = {
-        distance: "100%",
+        distance: "150%",
         origin: "right",
         delay: 300,
         opacity: null
