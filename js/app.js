@@ -4,6 +4,7 @@ function showPhoto() {
     for(let i = 0; i < photos.length; i++) {
         photos[i].addEventListener("click", function() {
             this.querySelector("img").classList.toggle("photo-big");
+            this.querySelector(".photo-story").classList.toggle("photo-story-show");
         })
     }
 }
