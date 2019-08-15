@@ -5,6 +5,7 @@
   --third-color: #000;
   --fourth-color: rgba(170, 165, 165, 0.4);
   --fifth-color: rgba(30, 31, 35, 0.5);
+  --sixth-color: #64a43c;
 }
 
 /* general */
@@ -190,6 +191,72 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* about-us */
+.about-us {
+    margin-bottom: 5rem;
+}
+
+.about-us-header {
+    display: none;
+}
+
+.about-us-wrapper {
+    padding: 0;
+    background: var(--second-color);
+}
+
+.about-us-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us-box span {
+    color: var(--base-color);
+    transition: color 0.3s;
+}
+
+.about-us-box span:hover {
+    color: var(--sixth-color);
+}
+
+.about-us-box a {
+    text-decoration: none;
+}
+
+.about-us-box a:first-of-type {
+    margin-right: 0.5rem;
+}
+
+.about-us-text {
+    width: 50%;
+    padding: 0 3rem;
+    text-align: left;
+}
+
+.about-us-box-second {
+    background: var(--base-color);
+    color: var(--second-color);
+}
+
+.about-us-box-second .about-us-text {
+    text-align: right;
+}
+
+.about-us-box-second span {
+    color: var(--second-color);
+}
+
+.about-us img {
+    width: 50%;
+}
+
+.fifth-header {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
 }
 
 /* media queries*/
