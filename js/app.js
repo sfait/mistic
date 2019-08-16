@@ -7,10 +7,9 @@ function showPhoto() {
             this.querySelector(".photo-story").classList.toggle("photo-story-show");
         })
     }
-}
+};
 
-function showAnimations() {
-
+function useScrollReveal() {
     const slideLeft = {
         distance: "150%",
         origin: "left",
@@ -29,6 +28,20 @@ function showAnimations() {
     ScrollReveal().reveal(".third-header-gallery, .fourth-header-gallery, .photo, .about-us-box-second", slideRight);
     ScrollReveal().reveal(".social-icons-section-wrapper, .footer-wrapper", { delay: 400 });
 }
+
+function showAnimations() {
+    const mobile = window.matchMedia("screen and (min-width: 750px)");
+
+    if (mobile.matches) {
+        useScrollReveal();
+    }
+
+    mobile.addListener( function(mobile) {
+        if (mobile.matches) {
+            useScrollReveal();
+        }
+    });
+};
 
 const init = () => {
     showPhoto();
