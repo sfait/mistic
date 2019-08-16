@@ -14,23 +14,19 @@ function showAnimations() {
     const slideLeft = {
         distance: "150%",
         origin: "left",
-        delay: 300,
         opacity: null
     };
 
     const slideRight = {
         distance: "150%",
         origin: "right",
-        delay: 300,
         opacity: null
     };
 
     ScrollReveal().reveal(".main-header", { delay: 200 });
     ScrollReveal().reveal(".second-header", { delay: 300 });
-    ScrollReveal().reveal(".story-header, .story-fourth-header, .story-paragraph", slideLeft);
-    ScrollReveal().reveal(".third-header-gallery, .fourth-header-gallery, .gallery-photos", slideRight);
-    ScrollReveal().reveal(".about-us-box", slideLeft);
-    ScrollReveal().reveal(".about-us-box-second", slideRight);
+    ScrollReveal().reveal(".story-header, .story-fourth-header, .story-paragraph, .about-us-box", slideLeft);
+    ScrollReveal().reveal(".third-header-gallery, .fourth-header-gallery, .photo, .about-us-box-second", slideRight);
     ScrollReveal().reveal(".social-icons-section-wrapper, .footer-wrapper", { delay: 400 });
 }
 
