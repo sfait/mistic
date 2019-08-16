@@ -216,7 +216,7 @@ body {
 .photo-story {
     width: 100%;
     height: 70%;
-    padding: 1.5rem;
+    padding: 0.5rem;
     background: var(--seventh-color);
     z-index: 6;
     position: absolute;
